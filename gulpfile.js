@@ -14,10 +14,10 @@ gulp.task("watchall",async ()=>{
         .pipe(gulp.dest("F:\\dist"));
     });
 
-    // gulp.watch("js/**/*",async ()=>{
-    //     gulp.src("js/**/*")
-    //     .pipe(gulp.dest("F:\\dist\\js"))
-    // })
+    gulp.watch("js/**/*",async ()=>{
+        gulp.src("js/**/*")
+        .pipe(gulp.dest("F:\\dist\\js"))
+    })
 
     gulp.watch("css/**/*",async ()=>{
         gulp.src("css/**/*")
@@ -31,15 +31,16 @@ gulp.task("watchall",async ()=>{
 
     gulp.watch("sass/**/*",async ()=>{
         gulp.src("sass/**/*")
-        .pipe(gulp.dest("F:\\dist\\sass"))
+        .pipe(sass())
+        .pipe(gulp.dest("F:\\dist\\css"))
     })
 
-    gulp.watch("js/*.js",async ()=>{
-        gulp.src("js/*.js")
-        .pipe(babel({presets:[es2015Preset]}))
-        .pipe(uglify())
-        .pipe(gulp.dest("F:\\dist\\js"));
-    })
+    // gulp.watch("js/cookieTools.js",async ()=>{
+    //     gulp.src("js/cookieTools.js")
+    //     .pipe(babel({presets:[es2015Preset]}))
+    //     .pipe(uglify())
+    //     .pipe(gulp.dest("F:\\dist\\js"));
+    // })
 
 })
 

@@ -5,6 +5,7 @@
 // 值
 // 有效期:(单位：多少天)
 //
+
 function addCookie(key,value,dayCount,path,domain){
     let d = new Date();
     d.setDate(d.getDate()+dayCount);
@@ -20,7 +21,6 @@ function addCookie(key,value,dayCount,path,domain){
     }
     document.cookie = str;
 }
-
 
 //获取cookie（查询）根据键获取值
 //参数：

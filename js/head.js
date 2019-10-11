@@ -151,7 +151,6 @@ $j(function () {
         )
     }();
 
-
     /*topBar置顶*/
     var positionMenu = function (id) {
         var mc = document.getElementById(id);
