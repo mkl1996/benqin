@@ -27,9 +27,9 @@ a, img {
   text-decoration: none; }
 
 /*!
-*about
+*about/newslist
 */
-.con_ny_common, .con_ny, .con_ny .danye, .con_ny .danye .danye_left, .con_ny .danye .danye_right, .con_ny .danye .danye_right .danye_nr {
+.con_ny_common, .con_ny, .con_ny .danye, .con_ny .danye .danye_left, .con_ny .danye .danye_right, .con_ny .danye .danye_right .danye_nr, .con_ny .danye .danye_right ul {
   height: auto;
   overflow: hidden; }
 
@@ -59,6 +59,118 @@ a, img {
         font-family: "微软雅黑";
         padding-bottom: 10px;
         margin: auto; }
+      .con_ny .danye .danye_right ul {
+        width: 740px;
+        clear: both;
+        display: block;
+        margin: auto; }
+        .con_ny .danye .danye_right ul li {
+          width: 740px;
+          height: 35px;
+          line-height: 35px;
+          border-bottom: 1px dashed #cccccc;
+          background: url(../images/fk.png);
+          background-position: left;
+          background-repeat: no-repeat;
+          font-family: "微软雅黑"; }
+  .con_ny .con_dqwz {
+    width: 970px;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #acc90b;
+    background: url(../images/dq.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    color: #4b8400;
+    padding-left: 30px;
+    margin-top: 10px; }
+    .con_ny .con_dqwz a {
+      color: #4b8400; }
+      .con_ny .con_dqwz a:hover {
+        color: #64b322; }
+  .con_ny .tplist1 {
+    width: 317px;
+    height: 290px;
+    float: left;
+    border: 1px solid #e6dcdc;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative; }
+    .con_ny .tplist1 .tplist1_1 {
+      width: 296px;
+      height: 185px;
+      margin: auto;
+      padding-top: 10px; }
+    .con_ny .tplist1 .tplist_yy {
+      width: 296px;
+      height: 15px;
+      background: url(../images/chanpin_yy.jpg);
+      margin: auto; }
+    .con_ny .tplist1 .tplist_mc {
+      width: 317px;
+      height: 35px;
+      line-height: 35px;
+      overflow: hidden;
+      font-family: "微软雅黑";
+      font-size: 15px;
+      text-align: center; }
+    .con_ny .tplist1 .tplist_mcjg {
+      width: 317px;
+      height: 44px;
+      line-height: 44px;
+      background: #e8f7ca;
+      font-family: "微软雅黑";
+      font-size: 15px;
+      text-align: center; }
+
+.big_area {
+  /*大显示区域宽高可直接改变*/
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: -10000px;
+  top: -1px;
+  border: solid 1px #000;
+  overflow: hidden;
+  margin-left: 120px;
+  z-index: 1000; }
+
+.big_area img {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+/*遮罩层*/
+.mask {
+  position: absolute;
+  left: -10000px;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background: #000;
+  opacity: 0.65;
+  filter: alpha(opacity=65); }
+
+.fy {
+  width: 100%;
+  height: 70px;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .fy a {
+    text-align: center;
+    line-height: 30px;
+    color: #5f635f; }
+    .fy a:hover {
+      background: #eeeeee;
+      color: #87e78e; }
+    .fy a .lb {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #dddddd; }
 
 .danye_left1 {
   width: 197px;
@@ -128,3 +240,27 @@ a, img {
   border: 1px dashed #98b205;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+/*!
+*newslist
+*/
+.bqsh_list {
+  float: left;
+  padding-left: 20px; }
+
+.lsit_sj {
+  float: right; }
+
+/*!
+*tplist
+*/
+.yuanjia {
+  float: left;
+  text-decoration: line-through;
+  padding-left: 15px; }
+
+.tejia {
+  float: right;
+  padding-right: 15px;
+  color: #F00;
+  font-size: 17px; }

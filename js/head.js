@@ -152,23 +152,23 @@ $j(function () {
     }();
 
     /*topBar置顶*/
-    var positionMenu = function (id) {
-        var mc = document.getElementById(id);
-        var minNumber = mc.offsetTop;
-        var isIE6 = navigator.appVersion.indexOf("MSIE 6") > -1;
+    // var positionMenu = function (id) {
+    //     var mc = document.getElementById(id);
+    //     // var minNumber = mc.offsetTop;
+    //     var isIE6 = navigator.appVersion.indexOf("MSIE 6") > -1;
 
-        $j(window).scroll(function () {
-            var sh = document.documentElement.scrollTop || document.body.scrollTop;
-            var th = document.documentElement.clientHeight;
-            if (sh > minNumber) {
-                mc.style.position = !isIE6 ? "fixed" : "absolute";
-                mc.style.top = !isIE6 ? "0px" : sh + "px";
-            } else {
-                mc.style.position = "static";
-                mc.style.top = minNumber + "px"
-            }
-        })
-    }("topBar")
+    //     $j(window).scroll(function () {
+    //         var sh = document.documentElement.scrollTop || document.body.scrollTop;
+    //         var th = document.documentElement.clientHeight;
+    //         if (sh > minNumber) {
+    //             mc.style.position = !isIE6 ? "fixed" : "absolute";
+    //             mc.style.top = !isIE6 ? "0px" : sh + "px";
+    //         } else {
+    //             mc.style.position = "static";
+    //             mc.style.top = minNumber + "px"
+    //         }
+    //     })
+    // }("topBar")
 })
 
 /*搜索提示*/
