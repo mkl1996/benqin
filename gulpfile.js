@@ -19,14 +19,15 @@ gulp.task("watchall",async ()=>{
         .pipe(gulp.dest("F:\\dist\\js"))
     })
 
-    gulp.watch("css/**/*",async ()=>{
-        gulp.src("css/**/*")
-        .pipe(gulp.dest("F:\\dist\\css"))
-    })
-
     gulp.watch("images/**/*",async ()=>{
         gulp.src("images/**/*")
         .pipe(gulp.dest("F:\\dist\\images"))
+    })
+
+    gulp.watch("sass/**/*",async ()=>{
+        gulp.src("sass/**/*")
+        .pipe(sass())
+        .pipe(gulp.dest("F:\\benqin\\css"))
     })
 
     gulp.watch("sass/**/*",async ()=>{
@@ -45,9 +46,8 @@ gulp.task("watchall",async ()=>{
 })
 
 
-
 gulp.task("server",async ()=>{
     connect.server({
-        root:"F:\\dist"
+        root:"F:\\benqin"
     })
 });

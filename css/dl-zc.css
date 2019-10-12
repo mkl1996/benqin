@@ -1,0 +1,184 @@
+@charset "UTF-8";
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: "宋体";
+  font-size: 12px;
+  color: #3d4245;
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #3d4245; }
+
+a:hover {
+  text-decoration: none;
+  color: #acc90b; }
+
+img {
+  border: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+a, img {
+  text-decoration: none; }
+
+/*!
+*zhuce
+*/
+.huiyuan_zc {
+  width: 980px;
+  height: 373px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.zcbj {
+  height: 500px;
+  background: url(../images/zcbj.jpg); }
+
+.huiyuan_zc .zhuce_1 {
+  width: 102px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #fff;
+  font-family: "微软雅黑";
+  font-size: 15px;
+  text-align: center; }
+
+.huiyuan_zc .zhuce_2 {
+  width: 978px;
+  height: 335px;
+  border: 1px solid #e4e4e4; }
+
+.huiyuan_zc .zhuce_2 .zhuce_left {
+  width: 490px;
+  height: 292px;
+  float: left;
+  padding-top: 25px; }
+
+.yhm_zc {
+  width: 454px;
+  height: 35px;
+  line-height: 35px;
+  font-family: "微软雅黑";
+  padding-left: 20px;
+  padding-top: 15px; }
+
+.zc_wbk {
+  width: 243px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 10px;
+  border: 1px solid #ddd;
+  margin-left: 5px;
+  color: #3d4245; }
+
+.zhuce_left .zhuce_tjxx {
+  width: 206px;
+  height: 35px;
+  clear: both;
+  margin-top: 40px;
+  margin-left: 85px; }
+
+.huiyuan_zc .zhuce_2 .zhuce_right {
+  width: 234px;
+  height: 335px;
+  float: right;
+  border-left: 1px solid #e4e4e4; }
+
+.zhuce_right .zhuce_right1 {
+  width: 234px;
+  height: 111px;
+  border-bottom: 1px solid #e4e4e4; }
+
+.zhuce_right .zhuce_right2 {
+  width: 228px;
+  height: 209px;
+  margin: auto;
+  margin-top: 7px; }
+
+/*!
+*denglu
+*/
+.con_dlbj .con_dlbj_main {
+  width: 1000px;
+  height: 500px;
+  margin: auto; }
+
+.con_dlbj .con_dlbj_main .denglu_bj2 {
+  width: 343px;
+  height: 392px;
+  background: url(../images/denglu_bj.png);
+  float: right;
+  margin-top: 50px; }
+
+.denglu_nr2 {
+  width: 322px;
+  height: 370px;
+  margin: auto;
+  margin-top: 7px; }
+
+.denglu_bt4 {
+  width: 312px;
+  height: 36px;
+  line-height: 36px;
+  background: url(../images/denglu_bt.jpg);
+  font-family: "微软雅黑";
+  font-size: 15px;
+  padding-left: 10px; }
+
+.denglu_nr2 .dl_yhm {
+  width: 230px;
+  height: 35px;
+  margin: auto;
+  line-height: 35px;
+  color: #3d4245;
+  padding-top: 20px;
+  font-family: "微软雅黑"; }
+
+.denglu_nr2 .dl_jzmm {
+  width: 165px;
+  height: 25px;
+  margin-left: 95px;
+  margin-top: 8px; }
+
+.dl_dl {
+  width: 205px;
+  height: 39px;
+  margin: auto;
+  padding-top: 15px;
+  padding-left: 70px; }
+
+.denglu_sm {
+  width: 304px;
+  height: 65px;
+  margin: auto;
+  line-height: 28px;
+  border-top: 1px dashed #CCC;
+  margin-top: 15px;
+  padding-top: 5px; }
+
+.denglu_hmzc {
+  width: 129px;
+  height: 35px;
+  margin: auto;
+  background: #eaebed;
+  border: 1px solid #e4e4e4;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  line-height: 35px;
+  text-align: center; }
+
+.denglu_nr2 .denglu_hmzc a {
+  width: 129px;
+  height: 35px;
+  display: block; }
+
+.con_dlbj {
+  height: 500px;
+  background: url(../images/dlbj.jpg) 50% 50%; }

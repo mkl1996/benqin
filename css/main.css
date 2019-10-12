@@ -1,0 +1,130 @@
+@charset "UTF-8";
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: "宋体";
+  font-size: 12px;
+  color: #3d4245;
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #3d4245; }
+
+a:hover {
+  text-decoration: none;
+  color: #acc90b; }
+
+img {
+  border: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+a, img {
+  text-decoration: none; }
+
+/*!
+*about
+*/
+.con_ny_common, .con_ny, .con_ny .danye, .con_ny .danye .danye_left, .con_ny .danye .danye_right, .con_ny .danye .danye_right .danye_nr {
+  height: auto;
+  overflow: hidden; }
+
+.con_ny {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 10px; }
+  .con_ny .danye {
+    width: 1000px;
+    clear: both;
+    padding-top: 20px; }
+    .con_ny .danye .danye_left {
+      width: 207px;
+      border: 1px solid #e4e4e4;
+      padding-bottom: 10px;
+      border-top: 1px solid #98b205;
+      float: left; }
+    .con_ny .danye .danye_right {
+      width: 768px;
+      float: right;
+      border: 1px solid #e4e4e4;
+      padding-bottom: 10px;
+      border-top: 2px solid #98b205; }
+      .con_ny .danye .danye_right .danye_nr {
+        width: 700px;
+        line-height: 24px;
+        font-family: "微软雅黑";
+        padding-bottom: 10px;
+        margin: auto; }
+
+.danye_left1 {
+  width: 197px;
+  height: 30px;
+  line-height: 30px;
+  font-family: "微软雅黑";
+  font-size: 15px;
+  padding-left: 10px;
+  border-bottom: 1px solid #dddddd;
+  font-weight: 600; }
+
+.danye_left2 {
+  width: 165px;
+  margin: auto;
+  height: 35px;
+  line-height: 35px;
+  background: url(../images/sanjiao.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  font-family: "微软雅黑";
+  font-size: 15px;
+  padding-left: 15px;
+  border-bottom: 1px dashed #ddd; }
+
+.danye_dqbt {
+  width: 768px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ddd; }
+
+.jj_t {
+  width: 16px;
+  height: 15px;
+  background: url(../images/dq.jpg);
+  display: block;
+  float: left;
+  margin-top: 7px;
+  margin-left: 15px;
+  color: #4b8400; }
+
+.dq_dy {
+  padding-left: 15px;
+  font-family: "微软雅黑";
+  color: #4b8400;
+  font-size: 13px; }
+  .dq_dy a {
+    color: #4b8400; }
+    .dq_dy a:hover {
+      color: #64b322; }
+
+.danye_mcbt_common, .danye_mcbt, .danye_mcdjl {
+  height: 40px;
+  line-height: 40px;
+  margin: auto;
+  font-family: "微软雅黑";
+  text-align: center; }
+
+.danye_mcbt {
+  width: 700px;
+  clear: both;
+  font-size: 18px;
+  color: #000;
+  padding-top: 10px; }
+
+.danye_mcdjl {
+  width: 720px;
+  border: 1px dashed #98b205;
+  margin-top: 10px;
+  margin-bottom: 10px; }

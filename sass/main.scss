@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+@import "base";
+
+$overflow:hidden;
+$fontFamily:"微软雅黑";
+$fontSize:15px;
+
+/*!
+*about
+*/
+
+.con_ny_common{
+	height:auto;
+	overflow:$overflow;
+}
+
+.con_ny {
+	@extend .con_ny_common;
+    width:1000px;
+    margin:auto;
+    padding-bottom:10px;
+
+    .danye{
+		@extend .con_ny_common;
+	    width:1000px;
+	    clear:both;
+	    padding-top:20px;
+
+	    .danye_left {
+			@extend .con_ny_common;
+		    width:207px;
+		    border:1px solid #e4e4e4;
+		    padding-bottom:10px;
+		    border-top:1px solid #98b205;
+		    float:left;
+		}
+		.danye_right {
+			@extend .con_ny_common;
+		    width:768px;
+		    float:right;
+		    border:1px solid #e4e4e4;
+		    padding-bottom:10px;
+		    border-top:2px solid #98b205;
+
+		    .danye_nr {
+		    	@extend .con_ny_common;
+			    width:700px;
+			    line-height:24px;
+			    font-family:$fontFamily;
+			    padding-bottom:10px;
+			    margin:auto;
+			}
+		}
+	}
+}
+
+.danye_left1 {
+    width:197px;
+    height:30px;
+    line-height:30px;
+    font-family:$fontFamily;
+    font-size:$fontSize;
+    padding-left:10px;
+    border-bottom:1px solid #dddddd;
+    font-weight:600;
+}
+.danye_left2 {
+    width:165px;
+    margin:auto;
+    height:35px;
+    line-height:35px;
+    background: url(../images/sanjiao.jpg);
+    background-repeat:no-repeat;
+    background-position:left;
+    font-family:$fontFamily;
+    font-size:$fontSize;
+    padding-left:15px;
+    border-bottom:1px dashed #ddd;
+}
+.danye_dqbt {
+    width:768px;
+    height:30px;
+    line-height:30px;
+    border-bottom:1px solid #ddd;
+}
+.jj_t {
+    width:16px;
+    height:15px;
+    background:url(../images/dq.jpg);
+    display:block;
+    float:left;
+    margin-top:7px;
+    margin-left:15px;
+    color:#4b8400;
+}
+.dq_dy {
+    padding-left:15px;
+    font-family:$fontFamily;
+    color:#4b8400;
+    font-size:13px;
+    a {
+	    color:#4b8400;
+
+	    &:hover {
+		    color:#64b322;
+		}
+	}
+}
+
+.danye_mcbt_common{
+	height:40px;
+	line-height:40px;
+	margin:auto;
+	font-family:$fontFamily;
+	text-align:center;
+}
+.danye_mcbt {
+	@extend .danye_mcbt_common;
+    width:700px;
+    clear:both;
+    font-size:18px;
+    color:#000;
+    padding-top:10px;
+}
+.danye_mcdjl {
+	@extend .danye_mcbt_common;
+    width:720px;
+    border:1px dashed #98b205;
+    margin-top:10px;
+    margin-bottom:10px;
+}
