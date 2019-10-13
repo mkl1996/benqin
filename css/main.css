@@ -96,8 +96,7 @@ a, img {
     float: left;
     border: 1px solid #e6dcdc;
     margin-top: 20px;
-    margin-left: 20px;
-    position: relative; }
+    margin-left: 20px; }
     .con_ny .tplist1 .tplist1_1 {
       width: 296px;
       height: 185px;
@@ -124,34 +123,6 @@ a, img {
       font-family: "微软雅黑";
       font-size: 15px;
       text-align: center; }
-
-.big_area {
-  /*大显示区域宽高可直接改变*/
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: -10000px;
-  top: -1px;
-  border: solid 1px #000;
-  overflow: hidden;
-  margin-left: 120px;
-  z-index: 1000; }
-
-.big_area img {
-  position: absolute;
-  left: 0;
-  top: 0; }
-
-/*遮罩层*/
-.mask {
-  position: absolute;
-  left: -10000px;
-  top: 0;
-  width: 100px;
-  height: 100px;
-  background: #000;
-  opacity: 0.65;
-  filter: alpha(opacity=65); }
 
 .fy {
   width: 100%;

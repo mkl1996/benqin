@@ -868,33 +868,7 @@
                     </div>
                 </div>
                 <div class="con2_yc">
-                    <script type="text/javascript" src="js/jq.js"></script>
-                    <script type="text/javascript">
-                        $(document).ready(function() {
-                            $(".hdpic dd a").hover(function() {
-                                    $(this).find(".picshine").stop();
-                                    $(this).find(".picshine").css("background-position", "-235px 0");
-                                    $(this).find(".picshine").animate({
-                                            backgroundPosition: '235px 0'
-                                        },
-                                        500);
-                                    $(this).find(".pictitle").stop().animate({
-                                        left: '0px'
-                                    }, {
-                                        queue: false,
-                                        duration: 450
-                                    });
-                                },
-                                function() {
-                                    $(this).find(".pictitle").stop().animate({
-                                        left: '-1135px'
-                                    }, {
-                                        queue: false,
-                                        duration: 200
-                                    });
-                                });
-                        });
-                    </script>
+                    
                     <div class="hdpic">
                         <dl>
                             <dd>
@@ -1034,43 +1008,7 @@
             <div class="con2_dtk">
                 <!--左侧1开始-->
                 <div class="con2_zc">
-                    <script type="text/javascript">
-                        window.onload = function() {
-                            var oWrap = document.getElementById('wrap');
-                            var aLi = oWrap.getElementsByTagName('li');
-                            var aH2 = oWrap.getElementsByTagName('h2');
-                            var aBox = oWrap.getElementsByTagName('div');
-
-                            var oWrap2 = document.getElementById('wrap2');
-                            var aLi2 = oWrap2.getElementsByTagName('li');
-                            var aH22 = oWrap2.getElementsByTagName('h2');
-                            var aBox2 = oWrap2.getElementsByTagName('div');
-
-                            for (var i = 0; i < aLi.length; i++) {
-                                var iNow = 0;
-                                aLi[i].index = i;
-                                aLi[i].onmouseover = function() {
-                                    aH2[iNow].style.display = 'block';
-                                    aBox[iNow].style.display = 'none';
-                                    aH2[this.index].style.display = 'none';
-                                    aBox[this.index].style.display = 'block';
-                                    iNow = this.index;
-                                };
-                            }
-
-                            for (var i = 0; i < aLi2.length; i++) {
-                                var iNow = 0;
-                                aLi2[i].index = i;
-                                aLi2[i].onmouseover = function() {
-                                    aH22[iNow].style.display = 'block';
-                                    aBox2[iNow].style.display = 'none';
-                                    aH22[this.index].style.display = 'none';
-                                    aBox2[this.index].style.display = 'block';
-                                    iNow = this.index;
-                                };
-                            }
-                        };
-                    </script>
+                    
                     <div id="wrap">
                         <ul>
                             <li>
@@ -1158,33 +1096,7 @@
                     </div>
                 </div>
                 <div class="con2_yc">
-                    <script type="text/javascript" src="js/jq.js"></script>
-                    <script type="text/javascript">
-                        $(document).ready(function() {
-                            $(".hdpic dd a").hover(function() {
-                                    $(this).find(".picshine").stop();
-                                    $(this).find(".picshine").css("background-position", "-235px 0");
-                                    $(this).find(".picshine").animate({
-                                            backgroundPosition: '235px 0'
-                                        },
-                                        500);
-                                    $(this).find(".pictitle").stop().animate({
-                                        left: '0px'
-                                    }, {
-                                        queue: false,
-                                        duration: 450
-                                    });
-                                },
-                                function() {
-                                    $(this).find(".pictitle").stop().animate({
-                                        left: '-1135px'
-                                    }, {
-                                        queue: false,
-                                        duration: 200
-                                    });
-                                });
-                        });
-                    </script>
+                    
                     <div class="hdpic">
                         <dl>
                             <dd>
@@ -1434,9 +1346,92 @@
 
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/jq.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/head.js"></script>
-<script> 
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".hdpic dd a").hover(function() {
+                $(this).find(".picshine").stop();
+                $(this).find(".picshine").css("background-position", "-235px 0");
+                $(this).find(".picshine").animate({
+                        backgroundPosition: '235px 0'
+                    },
+                    500);
+                $(this).find(".pictitle").stop().animate({
+                    left: '0px'
+                }, {
+                    queue: false,
+                    duration: 450
+                });
+            },
+            function() {
+                $(this).find(".pictitle").stop().animate({
+                    left: '-1135px'
+                }, {
+                    queue: false,
+                    duration: 200
+                });
+            });
+    });
 
+    window.onload = function() {
+        var oWrap = document.getElementById('wrap');
+        var aLi = oWrap.getElementsByTagName('li');
+        var aH2 = oWrap.getElementsByTagName('h2');
+        var aBox = oWrap.getElementsByTagName('div');
+
+        var oWrap2 = document.getElementById('wrap2');
+        var aLi2 = oWrap2.getElementsByTagName('li');
+        var aH22 = oWrap2.getElementsByTagName('h2');
+        var aBox2 = oWrap2.getElementsByTagName('div');
+
+        for (var i = 0; i < aLi.length; i++) {
+            var iNow = 0;
+            aLi[i].index = i;
+            aLi[i].onmouseover = function() {
+                aH2[iNow].style.display = 'block';
+                aBox[iNow].style.display = 'none';
+                aH2[this.index].style.display = 'none';
+                aBox[this.index].style.display = 'block';
+                iNow = this.index;
+            };
+        }
+
+        for (var i = 0; i < aLi2.length; i++) {
+            var iNow = 0;
+            aLi2[i].index = i;
+            aLi2[i].onmouseover = function() {
+                aH22[iNow].style.display = 'block';
+                aBox2[iNow].style.display = 'none';
+                aH22[this.index].style.display = 'none';
+                aBox2[this.index].style.display = 'block';
+                iNow = this.index;
+            };
+        }
+    };
+
+    $(document).ready(function() {
+        $(".hdpic dd a").hover(function() {
+                $(this).find(".picshine").stop();
+                $(this).find(".picshine").css("background-position", "-235px 0");
+                $(this).find(".picshine").animate({
+                        backgroundPosition: '235px 0'
+                    },
+                    500);
+                $(this).find(".pictitle").stop().animate({
+                    left: '0px'
+                }, {
+                    queue: false,
+                    duration: 450
+                });
+            },
+            function() {
+                $(this).find(".pictitle").stop().animate({
+                    left: '-1135px'
+                }, {
+                    queue: false,
+                    duration: 200
+                });
+            });
+    });
 </script>
