@@ -17,10 +17,8 @@
                     <a href="zhuce.html">[免费注册]</a>
                 </span>
                 <span class="yh_zx">
-                    <a href="hyzx.html">用户中心</a>  |  
-                    <a href="#">我的订单</a>  |  
-                    <a href="#">帮助中心</a>  |  
-                    <a href="#">联系方式</a>
+                    <a href="#">用户中心</a>         |  <a href="ddtj.html">我的订单</a>  |  
+                    <a href="#">帮助中心</a>         |  <a href="#">联系方式</a>
                 </span>
             </div>
         </div>
@@ -420,30 +418,17 @@
     </div>
     <div class="zcbj">
         <div class="huiyuan_zc">
-            <div class="zhuce_1">邮箱注册</div>
+            <div class="zhuce_1">用户注册</div>
             <div class="zhuce_2">
                 <div class="zhuce_left">
-                    <div class="yhm_zc">常用邮箱：
+                    <div class="yhm_zc">&nbsp;&nbsp;&nbsp;用户名：
                         <input type="text" name="textfield"  id="username" class="zc_wbk" />
                     </div>
                     <div class="yhm_zc">输入密码：
-                        <input type="text" name="textfield"  id="userpass" class="zc_wbk" />
+                        <input type="password" name="textfield"  id="userpass" class="zc_wbk" />
                     </div>
                     <div class="yhm_zc">再次输入：
-                        <input type="text" name="textfield"  id="checkpass" class="zc_wbk" />
-                    </div>
-                    <div class="yhm_zc">
-                        <span style="float:left;">&nbsp;&nbsp;&nbsp;验证码：
-                            <input type="text" name="textfield"  class="zc_wbk" / 
-                            style="width:100px;">
-                        </span>
-                        <span style="float:left; width:132px; height:32px; display:block; 
-                        margin-left:5px; margin-top:5px;">
-                            <img src="images/yzm.jpg" width="120" height="32" />
-                        </span>
-                        <span style="float:left;">
-                            <a href="#">看不清，再换一张</a>
-                        </span>
+                        <input type="password" name="textfield"  id="checkpass" class="zc_wbk" />
                     </div>
                     <div class="zhuce_tjxx">
                         <input name="" type="button"  id="btnReg" value="" 
@@ -453,6 +438,9 @@
                         border:none; background: url(images/zhuce_1.jpg); 
                         position:relative;">
                     </div>
+                </div>
+                <div style="margin-top: 50px;">
+                    <span id="messageBox"></span>
                 </div>
                 <div class="zhuce_right">
                     <div class="zhuce_right1">
@@ -524,6 +512,80 @@
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/head.js"></script>
-<script> 
+<script>
+    $("#btnReg").onclick = function(){
+        check();
+        let xhr = new XMLHttpRequest();
+        xhr.open("post","regSave.php",true);
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState==4 && xhr.status==200){
+                if(xhr.responseText=="-1"){
+                    $("#messageBox").style.color = "red";
+                    $("#messageBox").style.fontSize = "16px";
+                    $("#messageBox").innerHTML = "该用户名已被注册！"
+                    setTimeout(function(){
+                        $("#messageBox").innerHTML = ""
+                    },3000)
+                }else if(xhr.responseText=="0"){
+                    $("#messageBox").style.color = "red";
+                    $("#messageBox").style.fontSize = "16px";
+                    $("#messageBox").innerHTML = "注册失败！"
+                }else if(xhr.responseText=="1"){
+                    $("#messageBox").style.color = "black";
+                    $("#messageBox").style.fontSize = "16px";
+                    $("#messageBox").innerHTML = "注册成功!<br>5s后自动跳转到登录页面..."
+                    setTimeout(function(){
+                        window.location = "http://localhost/benqin/denglu.html"
+                    },5000)
+                }
+            }
+        }
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        let sendStr = `username=${$("#username").value}&userpass=${$("#userpass").value}`; 
+        xhr.send(sendStr);
+    }
+
+    function check(){
+
+        //非空判断：
+        if($("#username").value=="" || $("#userpass").value=="" || $("#checkpass").value==""){
+            alert("*不允许为空！");
+            $("#btnReg").disabled = disabled;
+            return false;
+        }
+
+        //判断用户名是否符合规则(以字母开头，字母数字下划线，2~9位。或者用户名是中文，2~4位)
+        var uPattern = /^[a-zA-Z][0-9a-zA-Z_]{1,8}$|[\u4e00-\u9fa5]{2,4}/;
+        if(!uPattern.test($("#username").value)){
+            alert("请输入正确的用户名！");
+            $("#btnReg").disabled = disabled;
+            return false;
+        }
+        
+        // 判断密码是否符合规则（密码包含 数字,英文,字符中的两种以上，长度6-20）
+        var uName = /^(?![0-9]+$)(?![a-z]+$)(?![A-Z]+$)(?!([^(0-9a-zA-Z)])+$).{6,20}$/;
+        if(!uName.test($("#userpass").value)){
+            alert("请输入正确的密码！");
+            $("#btnReg").disabled = disabled;
+            return false;
+        }
+
+        //判断密码和重复密码是否一致。
+        if($("#userpass").value != $("#checkpass").value){
+            alert("密码不一致，请重新输入！");
+            $("#btnReg").disabled = disabled;
+            return false;
+        }
+    }
+
+    function $(str){
+        if(str.charAt(0)=="#"){
+            return document.getElementById(str.substring(1));
+        }else if(str.charAt(0)=="."){
+            return document.getElementsByClassName(str.substring(1));
+        }else{
+            return document.getElementsByTagName(str);
+        }
+    }
 
 </script>

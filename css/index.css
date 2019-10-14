@@ -60,7 +60,7 @@ a, img {
 .logo {
   width: 338px;
   height: 113px;
-  padding-left: 60px;
+  padding-left: 90px;
   float: left; }
 
 .top_you {
@@ -372,6 +372,43 @@ a, img {
   zoom: 1; }
 
 /*mainbanner//////////////////////////////////////////////////////////////////////////////////////////////////*/
+#Tab1 {
+  width: 973px;
+  height: 320px; }
+
+.Menubox {
+  width: 100%;
+  background: #f1eff0;
+  height: 33px;
+  line-height: 33px;
+  border-bottom: 1px solid #dddddd; }
+  .Menubox ul {
+    margin: 0px;
+    padding: 0px; }
+    .Menubox ul li {
+      float: left;
+      display: block;
+      cursor: pointer;
+      width: 195px;
+      text-align: center;
+      color: #3c4144;
+      font-family: "微软雅黑";
+      font-size: 15px;
+      height: 33px;
+      line-height: 33px;
+      font-weight: 300;
+      border-right: 1px solid #dddddd; }
+    .Menubox ul .hover {
+      padding: 0px;
+      background: #acca08;
+      width: 195px;
+      color: #ffffff;
+      font-family: "微软雅黑";
+      font-size: 15px;
+      height: 33px;
+      line-height: 33px;
+      border-right: 1px solid #dddddd; }
+
 .mainbanner {
   height: 500px;
   overflow: hidden;

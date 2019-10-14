@@ -104,8 +104,9 @@ a, img {
   width: 500px;
   height: 78px;
   font-family: "微软雅黑";
-  line-height: 78px;
-  padding-left: 5px; }
+  padding-left: 5px;
+  padding-top: 35px;
+  display: flex; }
 
 .wntj {
   width: 203px;
@@ -191,7 +192,8 @@ a, img {
   padding-top: 8px; }
 
 #Tab1 {
-  width: 973px; }
+  width: 973px;
+  height: 480px; }
 
 .Menubox {
   width: 100%;
