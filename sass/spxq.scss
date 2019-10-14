@@ -193,10 +193,59 @@ $fontSize:15px;
     font-weight:600;
 }
 
-#Tab1 .Contentbox #con_one_1 .cpjs_qh1 {
+.Contentbox {
+    clear:both;
+    margin-top:0px;
+    border-top:none;
+    padding-top:8px;
+
+}
+
+#Tab1 {
+    width:973px;
+}
+.Menubox {
+    width:100%;
+    background: #f1eff0;
+    height:33px;
+    line-height:33px;
+    border-bottom:1px solid #dddddd;
+
+    ul {
+        margin:0px;
+        padding:0px;
+
+        li {
+            float:left;
+            display:block;
+            cursor:pointer;
+            width:195px;
+            text-align:center;
+            color:#3c4144;
+            font-family:$fontFamily;
+            font-size:$fontSize;
+            height:33px;
+            line-height:33px;
+            font-weight:300;
+            border-right:1px solid #dddddd;
+        }
+        .hover {
+            padding:0px;
+            background:#acca08;
+            width:195px;
+            color:#ffffff;
+            font-family:$fontFamily;
+            font-size:$fontSize;
+            height:33px;
+            line-height:33px;
+            border-right:1px solid #dddddd;
+        }
+    }
+}
+.cpjs_qh1 {
     width:732px;
-    height:auto;
-    overflow:$overflow;
+    height: auto;
+    overflow:hidden;
     padding-top:10px;
     padding-bottom:15px;
     margin-left:12px;
@@ -209,6 +258,7 @@ $fontSize:15px;
     padding-right:10px;
     margin-top:5px;
 }
+
 .xqyw {
     padding-left:50px;
 }
@@ -302,6 +352,7 @@ $fontSize:15px;
     padding-left:10px;
     padding-right:10px;
 }
+
 
 #preview {
     float:none;

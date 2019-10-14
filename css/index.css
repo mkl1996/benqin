@@ -462,62 +462,6 @@ a, img {
 ul {
   list-style: none; }
 
-#Tab1 {
-  width: 973px;
-  height: 320px; }
-
-#Tab2 {
-  width: 576px;
-  margin: 0;
-  padding: 0;
-  margin: 0 auto; }
-
-.Menubox {
-  width: 100%;
-  background: #f1eff0;
-  height: 33px;
-  line-height: 33px;
-  border-bottom: 1px solid #ddd; }
-
-.Menubox ul {
-  margin: 0;
-  padding: 0; }
-
-.Menubox li {
-  float: left;
-  display: block;
-  cursor: pointer;
-  width: 195px;
-  text-align: center;
-  color: #3c4144;
-  font-family: "微软雅黑";
-  font-size: 15px;
-  height: 33px;
-  line-height: 33px;
-  font-weight: 300;
-  border-right: 1px solid #ddd; }
-
-.Menubox li.hover {
-  padding: 0;
-  background: #acca08;
-  width: 195px;
-  color: #fff;
-  font-family: "微软雅黑";
-  font-size: 15px;
-  height: 33px;
-  line-height: 33px;
-  border-right: 1px solid #ddd; }
-
-.Contentbox {
-  clear: both;
-  margin-top: 0;
-  border-top: none;
-  height: 320px;
-  padding-top: 8px; }
-
-.STYLE2 {
-  font-size: 18px; }
-
 .remai1 {
   width: 164px;
   height: 250px;

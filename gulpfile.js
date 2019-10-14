@@ -11,17 +11,17 @@ const sass = require("gulp-sass");
 gulp.task("watchall",async ()=>{
     gulp.watch("*.html",async ()=>{
         gulp.src("*.html")
-        .pipe(gulp.dest("F:\\dist"));
+        .pipe(gulp.dest("E:\\phpStudy\\WWW\\benqin"));
     });
 
     gulp.watch("js/**/*",async ()=>{
         gulp.src("js/**/*")
-        .pipe(gulp.dest("F:\\dist\\js"))
+        .pipe(gulp.dest("E:\\phpStudy\\WWW\\benqin\\js"))
     })
 
     gulp.watch("images/**/*",async ()=>{
         gulp.src("images/**/*")
-        .pipe(gulp.dest("F:\\dist\\images"))
+        .pipe(gulp.dest("E:\\phpStudy\\WWW\\benqin\\images"))
     })
 
     gulp.watch("sass/**/*",async ()=>{
@@ -33,15 +33,9 @@ gulp.task("watchall",async ()=>{
     gulp.watch("sass/**/*",async ()=>{
         gulp.src("sass/**/*")
         .pipe(sass())
-        .pipe(gulp.dest("F:\\dist\\css"))
+        .pipe(gulp.dest("E:\\phpStudy\\WWW\\benqin\\css"))
     })
 
-    // gulp.watch("js/cookieTools.js",async ()=>{
-    //     gulp.src("js/cookieTools.js")
-    //     .pipe(babel({presets:[es2015Preset]}))
-    //     .pipe(uglify())
-    //     .pipe(gulp.dest("F:\\dist\\js"));
-    // })
 
 })
 
